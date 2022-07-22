@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.The_IT_Innovators">
         <activity
+            android:name=".settings"
+            android:exported="false" />
+        <activity
+            android:name=".otpVerification"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
