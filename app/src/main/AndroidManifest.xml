@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.The_IT_Innovators">
         <activity
+            android:name=".enternumber"
+            android:exported="false" />
+        <activity
             android:name=".chapters"
             android:exported="false" />
         <activity
