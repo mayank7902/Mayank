@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.The_IT_Innovators">
         <activity
-            android:name=".ProfileScreen"
-            android:exported="false" />
-        <activity
             android:name=".settings"
             android:exported="false" />
         <activity
