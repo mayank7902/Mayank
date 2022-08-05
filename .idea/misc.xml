@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/HP/AndroidStudioProjects/SIH-Project/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2595" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/SIH-Project/app/src/main/res/layout/activity_home.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/SIH-Project/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/SIH-Project/app/src/main/res/layout/activity_otp_verification.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/SIH-Project/app/src/main/res/layout/activity_settings.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tanmay Suryawanshi/AndroidStudioProjects/SIH-Project/app/src/main/res/layout/activity_otp_verification.xml" value="0.16197916666666667" />
         <entry key="..\:/Users/Tanmay Suryawanshi/AndroidStudioProjects/SIH-Project/app/src/main/res/layout/activity_settings.xml" value="0.16197916666666667" />
       </map>
