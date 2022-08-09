@@ -118,7 +118,7 @@ public class enternumber extends AppCompatActivity {
         super.onStart();
         if(FirebaseAuth.getInstance().getCurrentUser()!=null){
             //change chatactivity to home when home is created
-            Intent intent=new Intent(enternumber.this,chatActivity.class);
+            Intent intent=new Intent(enternumber.this,home.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
         }
