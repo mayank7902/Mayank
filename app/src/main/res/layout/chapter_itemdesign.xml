@@ -11,14 +11,13 @@
         android:background="#ffffff">
 
         <TextView
+            android:id="@+id/chapterName"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/chapterName"
-            android:text="chapter"
             android:padding="10dp"
-            android:textSize="18sp"
+            android:text="chapter"
             android:textAlignment="center"
-            >
+            android:textSize="18sp">
 
         </TextView>
 
