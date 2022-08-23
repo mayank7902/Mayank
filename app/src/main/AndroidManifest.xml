@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.The_IT_Innovators">
         <activity
+            android:name=".enterNumber"
+            android:exported="false" />
+        <activity
+            android:name=".splash"
+            android:exported="false" />
+        <activity
             android:name=".TeacherHome"
             android:exported="false" />
         <activity
