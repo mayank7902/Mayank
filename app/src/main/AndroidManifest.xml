@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.The_IT_Innovators">
         <activity
+            android:name=".askquestion"
+            android:exported="false" />
+        <activity
+            android:name=".chapters"
+            android:exported="false" />
+        <activity
+            android:name=".subjects"
+            android:exported="false" />
+        <activity
             android:name=".Notes"
             android:exported="false" />
         <activity
