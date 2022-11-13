@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/HP/AndroidStudioProjects/SIH-Project/app/src/main/res/drawable-v24/ic_baseline_arrow_downward_24.xml" value="0.203" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/SIH-Project/app/src/main/res/drawable-v24/ic_baseline_help_24.xml" value="0.203" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/SIH-Project/app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.203" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/SIH-Project/app/src/main/res/drawable/edit_button.xml" value="0.2125" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/SIH-Project/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2595" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/SIH-Project/app/src/main/res/drawable/person.xml" value="0.2125" />
