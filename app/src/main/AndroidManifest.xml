@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.The_IT_Innovators">
         <activity
+            android:name=".Home_screen"
+            android:exported="false" />
+        <activity
             android:name=".askquestion"
             android:exported="false" />
         <activity
@@ -42,9 +45,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Home"
-            android:exported="false" />
         <activity
             android:name=".settings"
             android:exported="false" />
