@@ -24,27 +24,25 @@
         <activity
             android:name=".Notes"
             android:exported="false" />
-        <activity
-            android:name=".Notes_screen"
-            android:exported="false" />
+
         <activity
             android:name=".enterNumber"
             android:exported="false" />
         <activity
             android:name=".splash"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Select_admin"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Select_admin"
+            android:exported="false"/>
         <activity
             android:name=".settings"
             android:exported="false" />

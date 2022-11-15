@@ -15,6 +15,15 @@ public class chapters extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chapters);
+        getSupportActionBar().hide();
+        FloatingActionButton floatingActionButtonChapters=findViewById(R.id.floatingActionButtonChapters);
+        floatingActionButtonChapters.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(chapters.this,askquestion.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

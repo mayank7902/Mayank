@@ -16,5 +16,23 @@ public class subjects extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_subjects);
+        getSupportActionBar().hide();
+        ImageView subject=findViewById(R.id.SubjectImage);
+        subject.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(subjects.this,chapters.class);
+                startActivity(intent);
+            }
+        });
+
+        FloatingActionButton floatingActionButtonSubjects=findViewById(R.id.floatingActionButtonSubjects);
+        floatingActionButtonSubjects.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(subjects.this,askquestion.class);
+                startActivity(intent);
+            }
+        });
     }
 }

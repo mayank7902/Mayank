@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".otpVerification">
 
     <ImageView
         android:id="@+id/imageView"
@@ -42,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Enter the number to get otp "
+        android:text="Enter otp received on your number"
         android:textColor="#090909"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,11 +50,12 @@
         app:layout_constraintTop_toBottomOf="@+id/OTPVerificationTitle" />
 
     <Button
-        android:id="@+id/buttonGetOTP"
+        android:id="@+id/buttonVerifyOTP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="88dp"
-        android:text="GET OTP"
+        android:text="Verify"
+        android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -69,7 +70,7 @@
         android:ems="10"
         android:inputType="phone"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonGetOTP"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVerifyOTP"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewEnterOTP" />
