@@ -1,0 +1,77 @@
+Index: app/src/main/java/com/example/the_it_innovators/splash.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.the_it_innovators;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\nimport android.os.Bundle;\r\n\r\npublic class splash extends AppCompatActivity {\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_splash);\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/the_it_innovators/splash.java b/app/src/main/java/com/example/the_it_innovators/splash.java
+--- a/app/src/main/java/com/example/the_it_innovators/splash.java	(revision c9af7381d05b1ee5e784243a29bfb68ff6a2800f)
++++ b/app/src/main/java/com/example/the_it_innovators/splash.java	(date 1668448894108)
+@@ -2,7 +2,9 @@
+ 
+ import androidx.appcompat.app.AppCompatActivity;
+ 
++import android.content.Intent;
+ import android.os.Bundle;
++import android.os.Handler;
+ 
+ public class splash extends AppCompatActivity {
+ 
+@@ -10,5 +12,16 @@
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.activity_splash);
++
++
++        Intent intent =new Intent(this,MainActivity.class);
++        Handler handler=new Handler();
++        handler.postDelayed(new Runnable() {
++            @Override
++            public void run() {
++                startActivity(intent);
++                finish();
++            }
++        }, 2000);
+     }
+ }
+\ No newline at end of file
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    package=\"com.example.the_it_innovators\">\r\n\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:icon=\"@mipmap/ic_launcher\"\r\n        android:label=\"@string/app_name\"\r\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/Theme.The_IT_Innovators\">\r\n        <activity\r\n            android:name=\".askquestion\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".chapters\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".subjects\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Notes\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Notes_screen\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".enterNumber\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".splash\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".MainActivity\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Select_admin\"\r\n            android:exported=\"true\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n        <activity\r\n            android:name=\".Home\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".settings\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".otpVerification\"\r\n            android:exported=\"false\" />\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	(revision c9af7381d05b1ee5e784243a29bfb68ff6a2800f)
++++ b/app/src/main/AndroidManifest.xml	(date 1668449387083)
+@@ -21,9 +21,7 @@
+         <activity
+             android:name=".Notes"
+             android:exported="false" />
+-        <activity
+-            android:name=".Notes_screen"
+-            android:exported="false" />
++
+         <activity
+             android:name=".enterNumber"
+             android:exported="false" />
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"GRADLE\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision c9af7381d05b1ee5e784243a29bfb68ff6a2800f)
++++ b/.idea/gradle.xml	(date 1668447703511)
+@@ -13,7 +13,6 @@
+             <option value="$PROJECT_DIR$/app" />
+           </set>
+         </option>
+-        <option name="resolveModulePerSourceSet" value="false" />
+       </GradleProjectSettings>
+     </option>
+   </component>
